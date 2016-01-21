@@ -1,0 +1,22 @@
+{
+  "name": "csi-280-201620-project01-js",
+  "version": "1.0.0",
+  "description": "A sample js project to get acquainted with GitHub",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinthorley/csi-280-2016sp-project01.git"
+  },
+  "author": "Kevin Thorley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinthorley/csi-280-2016sp-project01/issues"
+  },
+  "homepage": "https://github.com/kevinthorley/csi-280-2016sp-project01#readme",
+  "dependencies": {
+    "should": "^8.1.1"
+  }
+}
