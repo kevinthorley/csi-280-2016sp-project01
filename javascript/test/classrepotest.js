@@ -12,6 +12,7 @@ describe('ClassRepo', function() {
   describe('findById', function() {
     it('should retrieve a class with the given id', function() {
       var myClass = classRepo.findById('csi-280-51');
+      
 
       should.exist(myClass);
       myClass.name.should.equal('Open Source Software Development');
