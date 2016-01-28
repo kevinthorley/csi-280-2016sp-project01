@@ -18,12 +18,17 @@ var ClassRepo = exports.ClassRepo = function() {
     startTime: '19:00',
     endTime: '20:15'
   });
-}
+};
 
-ClassRepo.prototype.findById = function(id) {
-  // TODO: find a class by its id
-}
+ClassRepo.prototype.findById = function(id) {       //Finds a class in the list
+    for(var i = 0; i < this.classList.length; i++){
+        if(this.classList[i].id === id){
+            return this.classList[i];
+        }
+    }
+    return false;
+};
 
-ClassRepo.prototype.add = function(myClass) {
-  // TODO: add a class to the repository
-}
+ClassRepo.prototype.add = function(myClass) {   //Adds a class to the list
+  this.classList.push(myClass);
+};
