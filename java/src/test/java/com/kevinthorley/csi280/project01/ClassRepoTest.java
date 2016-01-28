@@ -8,7 +8,8 @@ import org.junit.Test;
 public class ClassRepoTest {
 
   @Test
-  public void testFindById() {
+  public void testFindById() 
+  {
     ClassRepo classRepo = new ClassRepo();
 
     Section mySection = classRepo.findById("csi-280-51");
