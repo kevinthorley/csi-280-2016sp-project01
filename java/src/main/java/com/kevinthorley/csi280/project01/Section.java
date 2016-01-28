@@ -5,7 +5,8 @@ public class Section {
   private String name;
   private String semester;
 
-  public Section(String id, String name, String semester) {
+  public Section(String id, String name, String semester) 
+  {
     this.id = id;
     this.name = name;
     this.semester = semester;
