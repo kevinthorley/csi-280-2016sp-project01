@@ -18,5 +18,8 @@
   "homepage": "https://github.com/kevinthorley/csi-280-2016sp-project01#readme",
   "dependencies": {
     "should": "^8.1.1"
+  },
+  "devDependencies": {
+    "should": "^8.2.1"
   }
 }
