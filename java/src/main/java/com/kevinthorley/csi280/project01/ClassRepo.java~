@@ -1,7 +1,6 @@
 package com.kevinthorley.csi280.project01;
 
 import java.util.List;
-
 import java.util.ArrayList;
 
 public class ClassRepo {
@@ -16,18 +15,11 @@ public class ClassRepo {
   }
 
   public Section findById(String id) {
-	  for(int i = 0; i < this.sections.size(); i++)
-	  {
-		  if(this.sections.get(i).getId().equals(id))
-		  {
-			  return sections.get(i);
-		  }
-		  
-	  }
+    // TODO: find a section by its id
     return null;
   }
 
   public void addSection(Section section) {
-    this.sections.add(section);
+    // TODO: add a section to the repository
   }
 }
