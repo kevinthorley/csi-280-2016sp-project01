@@ -11,15 +11,28 @@ public class ClassRepo {
     this.sections = new ArrayList<Section>();
 
     this.sections.add(new Section("csi-280-51", "Open Source Software Development", "2016SP"));
-    this.sections.add(new Section("csi-280-52", "Open Source Software Development", "2016SP"));
+    this.sections.add(new Section("csi-280-52", "Open Source Software Developments", "2016SP"));
   }
 
   public Section findById(String id) {
     // TODO: find a section by its id
+    for(int i = 0; i < sections.size(); i++)
+    {
+        int checker = sections.get(i).getId().compareTo(id);
+        if(checker == 0)
+        {
+            return sections.get(i);
+        }
+        else
+        {
+            continue;
+        }
+    }
     return null;
   }
 
   public void addSection(Section section) {
     // TODO: add a section to the repository
+    sections.add(section);
   }
 }
