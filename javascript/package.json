@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kevinthorley/csi-280-2016sp-project01#readme",
   "dependencies": {
-    "should": "^8.1.1"
+    "should": "^8.1.1",
+    "mocha": "~2.4.5"
   }
 }

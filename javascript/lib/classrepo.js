@@ -21,9 +21,16 @@ var ClassRepo = exports.ClassRepo = function() {
 }
 
 ClassRepo.prototype.findById = function(id) {
-  // TODO: find a class by its id
+  for (var i = 0, len = this.classList.length; i < len; i++)
+  {
+    if (this.classList[i].id == id) {
+      console.log("Value's are equal");
+      return this.classList[i];
+    }
+  }
 }
 
 ClassRepo.prototype.add = function(myClass) {
-  // TODO: add a class to the repository
+  this.classList.push(myClass);
+
 }
