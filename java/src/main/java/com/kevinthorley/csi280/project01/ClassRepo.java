@@ -15,7 +15,6 @@ public class ClassRepo {
   }
 
   public Section findById(String id) {
-<<<<<<< HEAD
       //  find a section by its id COMPLETED
  	for (int i = 0; i < sections.size(); i++) {
  	if (id == sections.get(i).getId())
@@ -27,13 +26,7 @@ public class ClassRepo {
   public void addSection(Section section) {
     // TODO: add a section to the repository COMPLETED
 	this.sections.add(section);
-=======
-    // TODO: find a section by its id
     return null;
   }
 
-  public void addSection(Section section) {
-    // TODO: add a section to the repository
->>>>>>> f23ca35421d52117ef35593b6740ac47f7e3d46b
-  }
-}
+  
