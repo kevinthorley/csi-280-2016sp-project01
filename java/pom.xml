@@ -9,7 +9,6 @@
 
   <name>Project 01: Prepare an Open Source Development Environment</name>
 
-
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -18,6 +17,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   <build>
     <plugins>
       <plugin>

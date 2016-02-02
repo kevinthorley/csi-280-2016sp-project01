@@ -9,7 +9,10 @@
 
   <name>Project 01: Prepare an Open Source Development Environment</name>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f23ca35421d52117ef35593b6740ac47f7e3d46b
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -18,4 +21,20 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+<<<<<<< HEAD
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>2.3</version>
+          <configuration>
+            <source>1.6</source>
+            <target>1.6</target>
+          </configuration>
+      </plugin>
+    </plugins>
+  </build>
+=======
+>>>>>>> f23ca35421d52117ef35593b6740ac47f7e3d46b
 </project>
