@@ -16,10 +16,15 @@ public class ClassRepo {
 
   public Section findById(String id) {
     // TODO: find a section by its id
-    return null;
+    for(Section s : sections)
+    {
+        if (s.getId() == id)
+            return s;
+    }
   }
 
   public void addSection(Section section) {
     // TODO: add a section to the repository
+     sections.add(section);
   }
 }
