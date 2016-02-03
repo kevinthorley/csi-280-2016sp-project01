@@ -21,9 +21,14 @@ var ClassRepo = exports.ClassRepo = function() {
 }
 
 ClassRepo.prototype.findById = function(id) {
-  // TODO: find a class by its id
+  // Make boolean and set it to false.
+  // for each object in the array
+  //   check its id
+  //   if it matches the id given
+  //     set that boolean to true
+  // if boolean is true, give information to caller.
 }
 
 ClassRepo.prototype.add = function(myClass) {
-  // TODO: add a class to the repository
+  // Add an object to the array.
 }
