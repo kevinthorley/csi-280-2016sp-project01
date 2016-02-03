@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class ClassRepo {
 
-  private List<Section> sections;
+  private ArrayList<Section> sections;
 
   public ClassRepo() {
     this.sections = new ArrayList<Section>();
@@ -14,12 +14,18 @@ public class ClassRepo {
     this.sections.add(new Section("csi-280-52", "Open Source Software Development", "2016SP"));
   }
 
-  public Section findById(String id) {
-    // TODO: find a section by its id
-    return null;
+  public Section findById(String id) {    
+    for(int i = 0; i < this.sections.size(); i++) {
+	if (this.sections.get(i).getId().equals(id))
+	    return sections.get(i);
+    }
+
+    return null; //if it gets this far something has Gone Wrong
   }
 
   public void addSection(Section section) {
-    // TODO: add a section to the repository
+    this.sections.add(section);
+
+    return;
   }
 }
