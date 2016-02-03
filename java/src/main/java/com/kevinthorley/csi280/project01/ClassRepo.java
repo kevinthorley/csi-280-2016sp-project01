@@ -21,7 +21,6 @@ public class ClassRepo {
         if (s.getId() == id)
             return s;
     }
-    return null;
   }
 
   public void addSection(Section section) {
