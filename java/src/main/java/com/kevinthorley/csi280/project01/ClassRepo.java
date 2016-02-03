@@ -15,11 +15,17 @@ public class ClassRepo {
   }
 
   public Section findById(String id) {
-    // TODO: find a section by its id
+    for(Section section : sections){
+      if(section.getId() == id){
+        System.out.println("Id Found!");
+        return section;
+      }
+    }
+    System.out.println("Id not found!");
     return null;
   }
 
   public void addSection(Section section) {
-    // TODO: add a section to the repository
+    this.sections.add(new Section(section.getId(), section.getName(), section.getSemester()));
   }
 }
