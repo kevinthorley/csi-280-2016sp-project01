@@ -14,12 +14,16 @@ public class ClassRepo {
     this.sections.add(new Section("csi-280-52", "Open Source Software Development", "2016SP"));
   }
 
-  public Section findById(String id) {
-    // TODO: find a section by its id
-    return null;
-  }
+public Section findById(String id) {
+
+    for (int i = 0; i < this.sections.size(); i++) {
+	    if (id == Section.id){
+	      return Section;
+    	}
+      return null;
+    }
 
   public void addSection(Section section) {
-    // TODO: add a section to the repository
+    sections.add(new Section(section.getId(), section.getName(), section.getSemester() ));
   }
 }
