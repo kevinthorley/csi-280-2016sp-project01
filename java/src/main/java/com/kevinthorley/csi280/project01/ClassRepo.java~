@@ -28,6 +28,6 @@ public class ClassRepo {
 
   public void addSection(Section section) {
     // TODO: add a section to the repository
-	sections.add(section);
+	sections.add(new Section(section.getId(), section.getName(), section.getSemester()));
   }
 }
