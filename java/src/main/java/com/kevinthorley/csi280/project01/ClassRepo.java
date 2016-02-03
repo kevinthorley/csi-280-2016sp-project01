@@ -6,7 +6,9 @@ import java.util.ArrayList;
 public class ClassRepo {
 
   private List<Section> sections;
-
+  
+  public String t;
+  
   public ClassRepo() {
     this.sections = new ArrayList<Section>();
 
@@ -15,11 +17,19 @@ public class ClassRepo {
   }
 
   public Section findById(String id) {
-    // TODO: find a section by its id
+	 for(int x=0; x < this.sections.size();x=x+1)
+	  {
+		 Section sec = this.sections.get(x);
+		  if ( sec.getId() == id)
+		  {
+			  return sec;
+		  }
+	  }
     return null;
   }
 
   public void addSection(Section section) {
-    // TODO: add a section to the repository
+	  this.sections.add(new Section(section.getId(), section.getName(), section.getSemester()));
   }
 }
+
