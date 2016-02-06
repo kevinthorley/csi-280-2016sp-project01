@@ -15,11 +15,16 @@ public class ClassRepo {
   }
 
   public Section findById(String id) {
-    // TODO: find a section by its id
+    for(int i = 0; i < sections.size(); i++){
+	    if(sections.get(i).getId().equals(id)){
+		    return sections.get(i);	
+	    }
+    }
+  
     return null;
   }
 
   public void addSection(Section section) {
-    // TODO: add a section to the repository
+  	sections.add(section);	
   }
 }
