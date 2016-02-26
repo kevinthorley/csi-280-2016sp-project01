@@ -21,18 +21,9 @@ var ClassRepo = exports.ClassRepo = function() {
 }
 
 ClassRepo.prototype.findById = function(id) {
-  var foundClass = null;
-  this.classList.forEach(function(myClass) {
-    if (myClass.id === id) {
-      foundClass = myClass;
-    }
-  });
-
-  return foundClass;
+  // TODO: find a class by its id
 }
 
 ClassRepo.prototype.add = function(myClass) {
-  if (! this.findById(myClass.id)) {
-    this.classList.push(myClass);
-  }
+  // TODO: add a class to the repository
 }
